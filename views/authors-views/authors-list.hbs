@@ -1,0 +1,9 @@
+<h1>Available authors</h1>
+
+<ul>
+  {{#each authors}}
+    <li>{{ this.firstName }} {{ this.lastName }}</li>
+  {{/each}}
+</ul>
+
+<a href="/authors-input">Add Author</a>

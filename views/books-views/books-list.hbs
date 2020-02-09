@@ -1,0 +1,13 @@
+<h1>Available books</h1>
+
+<ul>
+  {{#each books}}
+    <li class="flex"> <a href="/books/{{ this._id }}"> {{ this.title }} </a>
+      <form action="/books/{{this._id}}/delete" method="post">
+        <button type="submit">🗑</button>
+      </form>
+    </li>
+  {{/each}}
+</ul>
+
+<a href="/book-input">Add Book</a>
